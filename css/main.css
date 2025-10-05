@@ -1,0 +1,287 @@
+body {
+    color: #888888;
+    font-family: 'Inter', 'Helvetica Neue', Arial, sans-serif;
+    line-height: 1.4;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    font-size: 16px;
+    padding-top: 10%;
+    overflow: hidden;
+}
+
+.content {
+    width: 100%;
+    max-width: 500px;
+    line-height: 1.6;
+    text-align: left;
+    transform: translateX(-250px);
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+strong {
+    color: #404040;
+    text-decoration: none;
+}
+
+.stronga {
+    color: #404040;
+    text-decoration: none;
+}
+
+a {
+    text-decoration: none;
+    color: #404040;
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 3px;
+    text-decoration-color: #888888;
+}
+
+a:hover {
+    color: #888888;
+}
+
+.highlight {
+  background-color: #ffbd6d;
+}
+
+/* Icone social */
+.social-icons {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.social-icon {
+    font-size: 20px;
+    color: #404040;
+    text-decoration: none;
+}
+
+.social-icon:hover {
+    color: #808080;
+}
+
+.sun {
+    color: #ffbd6d;
+}
+
+/* Tema scuro */
+body.dark-theme {
+    background-color: #333333;
+    color: #dddddd;
+}
+
+body.dark-theme a {
+    color: #dddddd;
+    text-decoration-color: #cccccc;
+}
+
+body.dark-theme strong {
+    color: #cccccc;
+}
+
+body.dark-theme a:hover {
+    color: #ffffff;
+}
+
+body.dark-theme .social-icon {
+    color: #dddddd;
+}
+
+body.dark-theme .social-icon:hover {
+    color: #ffffff;
+}
+
+body.dark-theme .highlight {
+    background-color: #ffbd6d;
+    color: #404040;
+}
+
+/* Mobile: CENTRATO */
+@media (max-width: 768px) {
+    body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh; 
+        padding-top: 0; /
+    }
+
+    .content {
+        transform: none;
+        padding: 0 15px;
+        width: 90%;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        min-height: 100vh;
+    }
+
+    .content {
+        width: 95%;
+        padding: 0 10px;
+    }
+}
+
+
+/* Selezione testo */
+::selection {
+    background-color: #ffbd6d; 
+    color: #404040; 
+}
+
+::-moz-selection {
+    background-color: #ffbd6d;
+    color: white;
+}
+
+/* Blog */
+.article-divider {
+    border: none;
+    border-top: 1px solid #bbbbbb;
+    margin: 8px 0;
+}
+
+.article {
+    padding: 5px 0;
+}
+
+.article-date {
+    font-size: 13px;
+    color: #666;
+    margin-bottom: 2px;
+    display: block;
+}
+
+.article-title {
+    font-size: 16px;
+    color: #404040;
+    font-weight: bold;
+    margin: 0;
+}
+
+/* Tema scuro */
+body.dark-theme .article-divider {
+    border-top: 1px solid #555;
+}
+
+body.dark-theme .article-date {
+    color: #aaa;
+}
+
+body.dark-theme .article-title {
+    color: #ddd;
+}
+
+.home {
+    text-decoration: none;
+}
+
+.home:hover {
+    color: #ffbd6d;
+}
+
+body.dark-theme .home:hover {
+    color: #ffbd6d;
+}
+
+/* Cambio colore sole/luna nel tema scuro */
+body.dark-theme .theme-toggle {
+    color: #ffdd57;
+}
+
+/* Stile del sole/luna */
+.theme-toggle {
+    cursor: pointer;
+    font-size: 20px;
+    color: #ffbd6d;
+    transition: color 0.3s ease;
+}
+
+
+
+
+
+
+.work-list {
+    list-style: none;
+    padding: 0;
+  }
+  .work-list li {
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+  }
+  .work-initial {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background: #eee;
+    color: #888;
+    font-weight: bold;
+    text-align: center;
+    line-height: 30px;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+  .work-sub {
+    display: block;
+    color: #666;
+    font-size: 14px;
+  }
+  .footer {
+    text-align: center;
+    margin-top: 20px;
+  }
+  .work-item {
+    text-decoration: none;
+    color: #404040;
+    display: block;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  .work-item:hover {
+    background-color: #ffefd5;
+  }
+
+
+  body.dark-theme {
+    background-color: #2b2b2b;
+    color: #ddd;
+  }
+  body.dark-theme .stronga, 
+  body.dark-theme .work-item {
+    color: #ddd;
+  }
+  body.dark-theme .work-item:hover {
+    background-color: #ffbd6d;
+    color: #222;
+  }
+  body.dark-theme .work-initial {
+    background: #555;
+    color: #ddd;
+  }
+  body.dark-theme .home {
+    color: #aaa;
+  }
+  body.dark-theme .footer {
+    color: #ccc;
+  }
+
+  
+  .theme-toggle {
+    cursor: pointer;
+    font-size: 18px;
+    color: #ffbd6d;
+    transition: color 0.3s ease;
+  }
+  body.dark-theme .theme-toggle {
+    color: #ffdd57;
+  }
